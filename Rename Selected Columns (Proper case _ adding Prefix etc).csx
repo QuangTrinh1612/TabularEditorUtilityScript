@@ -1,4 +1,5 @@
-foreach(var obj in Selected.Columns) {
+// foreach(var obj in Selected.Columns) {
+foreach(var obj in Model.AllColumns) {
     var oldName = obj.Name.Replace('_',' ');
     var newName = new System.Text.StringBuilder();
     for(int i = 0; i < oldName.Length; i++) {
